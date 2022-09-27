@@ -7,4 +7,191 @@
 */
 .p-footer {
   position: relative;
+  $this: &;
+
+  &Cta {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    padding: 40px 0;
+    background-image: url(../img/common/cta@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__text {
+      color: $base-color;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+
+      @include mq(lg) {
+        font-size: 2rem;
+        line-height: 1.6975;
+      }
+    }
+
+    &__button {
+      width: 200px;
+      margin: 0 auto;
+      padding-top: 15px;
+      text-align: center;
+
+      > .-rounded {
+        display: block;
+        padding: 8px;
+        border-radius: 25px;
+        background-color: $sub-color;
+        color: $base-color;
+      }
+    }
+
+    &__contact {
+      padding-top: 20px;
+      font-weight: 500;
+      text-align: center;
+
+      > a {
+        color: $base-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &Info {
+    padding: 10px 0;
+    text-align: center;
+
+    @include mq(lg) {
+      display: flex;
+    }
+
+    &__text {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    &__tel {
+      padding-top: 10px;
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      @include mq(lg) {
+        padding-top: 0;
+      }
+
+      > a {
+        color: $main-color;
+      }
+    }
+
+    &__time {
+      padding-top: 8px;
+
+      @include mq(lg) {
+        padding-top: 0;
+      }
+
+      > .-pl {
+        padding-left: 8px;
+      }
+    }
+  }
+
+  &Bottom {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    background-color: $main-color;
+
+    &__body {
+      padding: 30px 0;
+
+      @include mq(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 340px;
+    margin: 0 auto;
+
+    @include mq(lg) {
+      justify-content: space-between;
+      max-width: 405px;
+    }
+
+    &__item {
+      position: relative;
+      padding: 8px 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        width: 1px;
+        height: 23px;
+        transform: translateY(-50%);
+        background-color: $base-color;
+      }
+
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__link {
+      display: block;
+      color: $base-color;
+    }
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-style: normal;
+
+    @include mq(lg) {
+      display: block;
+      padding-top: 0;
+    }
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    color: $base-color;
+    font-weight: 700;
+
+    > span {
+      display: inline-block;
+      padding-right: 6px;
+      line-height: 1;
+    }
+  }
+
+  &__time {
+    padding-top: 6px;
+    color: $base-color;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  &__copyright {
+    text-align: right;
+
+    > small {
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
 }

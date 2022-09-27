@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../global" as *;
+/*
+  News
+-----------------------------------------------------*/
+.l-news {
+  padding-top: 40px;
+
+  &__item {
+    padding-top: 30px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}

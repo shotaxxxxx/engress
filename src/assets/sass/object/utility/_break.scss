@@ -11,10 +11,10 @@
 */
 .u-break {
   &.-xxs {
+    display: none;
     @include mq(sm) {
-      display: none;
+      display: inline-block;
     }
-    display: inline-block;
   }
 
   &.-md {

@@ -1,0 +1,63 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Flow
+*/
+.p-flow {
+  &__body {
+    padding-top: 40px;
+
+    @include mq(lg) {
+      padding-top: 53px;
+    }
+  }
+
+  &__list {
+    padding-top: 20px;
+
+    @include mq(lg) {
+      display: flex;
+      align-items: center;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+    padding: 14px 5px 14px 60px;
+    background-color: $background-color;
+    font-weight: 700;
+
+    > span {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 100%;
+      background-color: $sub-color;
+      color: $secondary-text-color;
+    }
+
+    @include mq(lg) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__lead {
+    padding: 14px 10px;
+    background-color: $background-color;
+    font-size: 0.875rem;
+
+    @include mq(lg) {
+      font-size: 1rem;
+    }
+  }
+}

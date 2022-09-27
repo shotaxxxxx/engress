@@ -6,7 +6,19 @@
   Header
 */
 .p-header {
+  background-color: $base-color;
   &__inner {
     display: flex;
+    padding: 14px 0;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 5;
+    line-height: 1;
+  }
+
+  &__cta {
+    display: none;
   }
 }

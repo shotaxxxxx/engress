@@ -1,0 +1,116 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Feature
+*/
+.p-feature {
+  $this: &;
+
+  &__items {
+    padding-top: 30px;
+  }
+
+  &__item {
+    padding-top: 40px;
+
+    @include mq(lg) {
+      display: flex;
+      padding-top: 60px;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &.-reverse {
+      @include mq(lg) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__label {
+    width: 90px;
+    padding: 6px 0;
+    background-color: $sub-color;
+    color: $secondary-text-color;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  &__title {
+    padding-top: 14px;
+    font-size: 1.25rem;
+
+    @include mq(lg) {
+      padding-top: 35px;
+      font-size: 1.625rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__text {
+    padding-top: 14px;
+    font-size: 0.875rem;
+
+    @include mq(lg) {
+      font-size: 1rem;
+      line-height: 1.6875;
+    }
+  }
+
+  &__image {
+    padding-top: 20px;
+
+    @include mq(lg) {
+      padding-top: 0;
+    }
+  }
+
+  #{$this}Bottom {
+    width: 100vw;
+    margin: 60px calc(50% - 50vw) 0;
+    padding: 40px 0;
+    background-image: url(../img/common/price@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include mq(lg) {
+      width: 100%;
+      margin: auto;
+    }
+
+    &__title {
+      color: $secondary-text-color;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-align: center;
+
+      @include mq(lg) {
+        font-size: 1.625rem;
+      }
+    }
+
+    &__button {
+      width: 180px;
+      margin: 0 auto;
+      padding-top: 20px;
+      text-align: center;
+
+      > .-rounded {
+        display: block;
+        padding: 8px 0;
+        border: 1px solid $base-color;
+        border-radius: 30px;
+        color: $secondary-text-color;
+
+        @include mq(lg) {
+          padding: 12px 0;
+        }
+      }
+    }
+  }
+}

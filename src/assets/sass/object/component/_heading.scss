@@ -7,4 +7,9 @@
 */
 .c-heading {
   display: block;
+  text-align: center;
+
+  &.-colorWhite {
+    color: $secondary-text-color;
+  }
 }

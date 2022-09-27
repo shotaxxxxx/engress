@@ -1,0 +1,85 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Example
+*/
+.p-example {
+  background-color: $main-color;
+
+  &__inner {
+    padding-top: 60px;
+
+    @include mq(lg) {
+      padding-top: 80px;
+    }
+
+    @include mq(xxl) {
+      padding-top: 137px;
+    }
+  }
+
+  &__items {
+    width: 280px;
+    margin: 0 auto;
+
+    @include mq(lg) {
+      display: flex;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  &__item {
+    padding-top: 40px;
+
+    @include mq(lg) {
+      padding-top: 0;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__itemText {
+    color: $secondary-text-color;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.8125;
+  }
+
+  &__itemImage {
+    background-color: $base-color;
+    text-align: center;
+  }
+
+  &__itemInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    font-size: 1rem;
+
+    > .-job,
+    .-name {
+      padding: 4px 10px;
+      background-color: $base-color;
+    }
+
+    > .-job {
+      width: 100px;
+    }
+
+    > .-name {
+      width: 172px;
+    }
+  }
+
+  &__itemResult {
+    margin-top: 10px;
+    padding: 4px 14px;
+    background-color: $base-color;
+  }
+}

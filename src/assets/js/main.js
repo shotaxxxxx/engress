@@ -11,7 +11,7 @@ import Loading from "./lib/Loading";
 // import Swiper from 'swiper';
 // import SmoothScroll from "smooth-scroll";
 // import ScrollObserver from './lib/ScrollObserver';
-// import Toggle from "./lib/Toggle";
+import Toggle from "./lib/Toggle";
 // import Close from "./lib/Close";
 // import Slider from "./lib/Slider";
 // import { dropdown } from './lib/dropdown';
@@ -19,4 +19,4 @@ import Loading from "./lib/Loading";
 
 new Loading();
 // new SmoothScroll('a[href*="#"]');
-// new Toggle(".js-drawer");
+new Toggle(".js-drawer");

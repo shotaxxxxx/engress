@@ -7,4 +7,23 @@
 */
 .p-logo {
   $this: &;
+  display: block;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &.-secondary {
+    width: 159px;
+    padding: 13px 15px;
+    background-color: $base-color;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }

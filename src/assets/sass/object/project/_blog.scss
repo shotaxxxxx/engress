@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Blog
+*/
+.p-blog {
+  position: relative;
+
+  &__body {
+    justify-content: space-between;
+    padding-left: 16px;
+  }
+
+  &__category {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding: 2px 10px;
+    background-color: $main-color;
+    color: $base-color;
+    font-size: 0.75rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6875;
+    text-decoration: underline;
+  }
+
+  &__publish {
+    font-size: 0.75rem;
+  }
+}

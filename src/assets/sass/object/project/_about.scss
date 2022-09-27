@@ -1,0 +1,66 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  About
+*/
+.p-about {
+  background-color: $main-color;
+  &__lists {
+    padding-top: 30px;
+    @include mq(md) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    padding-top: 14px;
+    color: $secondary-text-color;
+    text-align: center;
+
+    @include mq(md) {
+      padding-top: 0;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__item {
+    margin-top: 30px;
+    padding: 6px;
+    background-color: $base-color;
+  }
+
+  &__body {
+    padding: 8px 0;
+    border: 5px solid $main-color;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.38888;
+    text-align: center;
+
+    @include mq(lg) {
+      font-size: 2.25rem;
+    }
+
+    > span {
+      background: linear-gradient(transparent 70%, $sub-color 30%);
+    }
+  }
+
+  &__text {
+    padding-top: 14px;
+    line-height: 1.72222;
+    text-align: center;
+
+    @include mq(lg) {
+      font-size: 1.125rem;
+    }
+  }
+}
