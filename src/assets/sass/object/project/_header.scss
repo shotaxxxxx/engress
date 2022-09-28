@@ -18,7 +18,41 @@
     line-height: 1;
   }
 
-  &__cta {
+  &__info {
     display: none;
+  }
+
+  &__buttons {
+    @include mq(lg) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__button {
+    width: 142px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    @include mq(lg) {
+      padding-top: 0;
+    }
+
+    > .-primary,
+    .-secondary {
+      display: block;
+      padding: 10px 0;
+      border-radius: 5px;
+      color: $base-color;
+      font-weight: 700;
+    }
+
+    > .-primary {
+      background-color: $sub-color;
+    }
+
+    > .-secondary {
+      background-color: $main-color;
+    }
   }
 }

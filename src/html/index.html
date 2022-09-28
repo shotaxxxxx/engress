@@ -54,28 +54,30 @@
               <li class="p-globalNav__item"><a href="#" class="p-globalNav__link">お知らせ</a></li>
               <li class="p-globalNav__item"><a href="#" class="p-globalNav__link">ブログ</a></li>
               <li class="p-globalNav__item"><a href="#" class="p-globalNav__link">コース・料金</a></li>
+              <li class="p-globalNav__item">
+                <div class="p-header__cta">
+                  <div class="p-header__info">
+                    <p>平日<time>08:00</time>〜<time>20:00</time></p>
+                    <p>
+                      <img
+                        src="assets/img/common/tel.png"
+                        alt="tel"
+                        srcset="assets/img/common/tel.png, assets/img/common/tel@2x.png 2x"
+                      />
+                      0120-456-7890
+                    </p>
+                  </div>
+                  <!-- /.p-header__info -->
+                  <div class="p-header__buttons">
+                    <p class="p-header__button"><a href="#" class="c-button -primary">資料請求</a></p>
+                    <p class="p-header__button"><a href="#" class="c-button -secondary">お問い合わせ</a></p>
+                  </div>
+                  <!-- /.p-header__buttons -->
+                </div>
+                <!-- /.p-header__cta -->
+              </li>
             </ul>
           </nav>
-          <div class="p-header__cta">
-            <div class="p-header__info">
-              <p>平日<time>08:00</time>〜<time>20:00</time></p>
-              <p>
-                <img
-                  src="assets/img/common/tel.png"
-                  alt="tel"
-                  srcset="assets/img/common/tel.png, assets/img/common/tel@2x.png 2x"
-                />
-                0120-456-7890
-              </p>
-            </div>
-            <!-- /.p-header__info -->
-            <div class="p-header__buttons">
-              <p class="p-header__button"><a href="#" class="c-button -primary">資料請求</a></p>
-              <p class="p-header__button"><a href="#" class="c-button -secondary">お問い合わせ</a></p>
-            </div>
-            <!-- /.p-header__buttons -->
-          </div>
-          <!-- /.p-header__cta -->
         </div>
         <!-- /.p-header__inner -->
       </div>
@@ -297,7 +299,7 @@
           <div class="l-wrapper">
             <h2 class="c-heading">よくある質問</h2>
             <div class="p-faq__body">
-              <div class="p-faq__item">
+              <div class="p-faq__item js-faq">
                 <h3 class="p-faq__title">Engressはサラリーマンでも学習を続けられるでしょうか？</h3>
                 <div class="p-faq__box">
                   <p class="p-faq__text">
@@ -307,7 +309,7 @@
                 <!-- /.p-faq__box -->
               </div>
               <!-- /.p-faq__item -->
-              <div class="p-faq__item">
+              <div class="p-faq__item js-faq">
                 <h3 class="p-faq__title">教材はオリジナルのものを使用しているのでしょうか？</h3>
                 <div class="p-faq__box">
                   <p class="p-faq__text">完全オリジナルなものを使用しておりますので、ご安心ください。</p>
@@ -315,7 +317,7 @@
                 <!-- /.p-faq__box -->
               </div>
               <!-- /.p-faq__item -->
-              <div class="p-faq__item">
+              <div class="p-faq__item js-faq">
                 <h3 class="p-faq__title">講師に日本人はいますか？</h3>
                 <div class="p-faq__box">
                   <p class="p-faq__text">数名程日本人の講師も在籍しております。</p>
@@ -323,7 +325,7 @@
                 <!-- /.p-faq__box -->
               </div>
               <!-- /.p-faq__item -->
-              <div class="p-faq__item">
+              <div class="p-faq__item js-faq">
                 <h3 class="p-faq__title">TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</h3>
                 <div class="p-faq__box">
                   <p class="p-faq__text">TOEFL対策専門のため、それ以外のサポートは行っておりません。</p>
@@ -480,7 +482,7 @@
                       /></span>
                       0123-456-7890
                     </p>
-                    <p class="p-footer__time">平日<time >08:00</time>~<time>20:00</time></p>
+                    <p class="p-footer__time">平日<time>08:00</time>~<time>20:00</time></p>
                   </div>
                 </address>
                 <!-- /.p-footerBottom__info -->
@@ -496,5 +498,23 @@
       </div>
       <!-- /.l-container -->
     </footer>
+    <script defer>
+//       const faq = document.querySelectorAll(".js-faq");
+//    const tog = function () {
+//   const content = this.childNodes[3];
+//   content.classList.toggle("is-open");
+
+// };
+// for (let i = 0; i < faq.length; i++) {
+//   faq[i].addEventListener("click", tog);
+// }
+
+class Accordion {
+  constractor(selector) {
+    this.DOM = {};
+    console.log(this.DOM);
+  }
+}
+    </script>
   </body>
 </html>

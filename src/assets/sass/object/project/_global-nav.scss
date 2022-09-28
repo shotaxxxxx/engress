@@ -39,6 +39,10 @@
     display: block;
     padding: 25px 0;
     color: $main-color;
+
+    @include mq(lg) {
+      padding: 10px 0;
+    }
   }
 }
 

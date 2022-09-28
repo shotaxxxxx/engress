@@ -16,7 +16,10 @@ import Toggle from "./lib/Toggle";
 // import Slider from "./lib/Slider";
 // import { dropdown } from './lib/dropdown';
 // import { inview } from './lib/inview';
+// import { faq, accordion } from "./lib/Accordion";
+import Accordion from "./lib/Accordion";
 
 new Loading();
 // new SmoothScroll('a[href*="#"]');
 new Toggle(".js-drawer");
+new Accordion();
