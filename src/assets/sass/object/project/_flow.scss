@@ -20,6 +20,7 @@
     @include mq(lg) {
       display: flex;
       align-items: center;
+      padding-top: 8px;
     }
 
     &:first-child {
@@ -44,10 +45,27 @@
       height: 100%;
       background-color: $sub-color;
       color: $secondary-text-color;
+
+      @include mq(lg) {
+        width: 64px;
+      }
     }
 
     @include mq(lg) {
+      width: 30%;
+      padding: 19px 5px 18px 85px;
       font-size: 1.125rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 29px;
+        transform: translateY(-50%);
+        background-color: $primary-border-color;
+      }
     }
   }
 
@@ -57,6 +75,8 @@
     font-size: 0.875rem;
 
     @include mq(lg) {
+      width: 70%;
+      padding: 20px 10px 20px 53px;
       font-size: 1rem;
     }
   }

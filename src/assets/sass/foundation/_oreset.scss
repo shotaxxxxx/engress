@@ -159,11 +159,11 @@ body {
   min-height: 100%;
   color: $primary-text-color;
   font: 1em/1.5 $font-set-primary;
-  letter-spacing: 0.05em;
+  // letter-spacing: 0.05em;
   text-rendering: optimizeLegibility;
   -webkit-overflow-scrolling: touch;
   // font-feature-settings: "palt";
-  font-feature-settings: "pkna";
+  // font-feature-settings: "pkna";
 
   .is-drawerActive & {
     overflow-y: hidden;

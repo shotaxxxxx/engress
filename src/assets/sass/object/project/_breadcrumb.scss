@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Breadcrumb
+*/
+.breadcrumbs {
+  background-color: $background-color;
+}
+
+.breadcrumb_inner {
+  width: 95%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  span {
+    display: inline-block;
+    position: relative;
+    margin-right: 24px;
+    font-size: 0.75rem;
+
+    &::before {
+      content: ">";
+      position: absolute;
+      top: 50%;
+      right: -19px;
+      transform: translateY(-50%);
+      color: $main-color;
+      font-size: 0.75rem;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    padding: 8px 0;
+    color: $main-color;
+    text-decoration: underline;
+  }
+}

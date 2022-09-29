@@ -8,8 +8,12 @@
 .l-blog {
   padding-top: 40px;
 
-  &__item {
+  @include mq(lg) {
     padding-top: 30px;
+  }
+
+  &__item {
+    padding-top: 31px;
 
     &:first-child {
       padding-top: 0;

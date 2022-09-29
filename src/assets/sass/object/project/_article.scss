@@ -6,7 +6,12 @@
   Article
 */
 .p-article {
+  max-width: 600px;
+  margin: 0 auto;
+
   @include mq(lg) {
     display: flex;
+    max-width: 100%;
+    margin: 0;
   }
 }

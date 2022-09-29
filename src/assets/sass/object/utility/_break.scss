@@ -18,9 +18,16 @@
   }
 
   &.-md {
+    display: inline-block;
+
     @include mq(md) {
-      display: inline-block;
+      display: none;
     }
+  }
+
+  &.-lg {
+    display: inline-block;
+
     @include mq(lg) {
       display: none;
     }

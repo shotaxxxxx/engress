@@ -25,6 +25,8 @@
 
   @include mq(lg) {
     position: static;
+    flex-direction: row;
+    padding-top: 0;
     transform: none;
     transition: none;
   }
@@ -33,6 +35,21 @@
     font-size: 1.25rem;
     font-weight: 700;
     text-align: center;
+
+    @include mq(lg) {
+      margin-right: 15px;
+      font-size: 1rem;
+    }
+
+    @include mq(xl) {
+      margin-right: 28px;
+    }
+
+    &.-xxs {
+      @include mq(lg) {
+        display: none;
+      }
+    }
   }
 
   &__link {

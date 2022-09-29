@@ -9,7 +9,17 @@
   display: block;
   text-align: center;
 
+  @include mq(lg) {
+    font-size: 2.25rem;
+  }
+
   &.-colorWhite {
     color: $secondary-text-color;
+  }
+
+  &.-left {
+    @include mq(lg) {
+      text-align: left;
+    }
   }
 }

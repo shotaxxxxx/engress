@@ -53,12 +53,12 @@
               <li class="p-globalNav__item"><a href="#" class="p-globalNav__link">ホーム</a></li>
               <li class="p-globalNav__item"><a href="#" class="p-globalNav__link">お知らせ</a></li>
               <li class="p-globalNav__item"><a href="#" class="p-globalNav__link">ブログ</a></li>
-              <li class="p-globalNav__item"><a href="#" class="p-globalNav__link">コース・料金</a></li>
-              <li class="p-globalNav__item">
+              <li class="p-globalNav__item"><a href="plan.html" class="p-globalNav__link">コース・料金</a></li>
+              <li class="p-globalNav__item -xxs">
                 <div class="p-header__cta">
                   <div class="p-header__info">
-                    <p>平日<time>08:00</time>〜<time>20:00</time></p>
-                    <p>
+                    <p class="-time">平日<time>08:00</time>〜<time>20:00</time></p>
+                    <p class="-tel">
                       <img
                         src="assets/img/common/tel.png"
                         alt="tel"
@@ -77,6 +77,26 @@
                 <!-- /.p-header__cta -->
               </li>
             </ul>
+            <div class="p-header__cta -lg">
+              <div class="p-header__info">
+                <p class="-time">平日<time>08:00</time>〜<time>20:00</time></p>
+                <p class="-tel">
+                  <img
+                    src="assets/img/common/tel.png"
+                    alt="tel"
+                    srcset="assets/img/common/tel.png, assets/img/common/tel@2x.png 2x"
+                  />
+                  0120-456-7890
+                </p>
+              </div>
+              <!-- /.p-header__info -->
+              <div class="p-header__buttons">
+                <p class="p-header__button"><a href="#" class="c-button -primary">資料請求</a></p>
+                <p class="p-header__button"><a href="#" class="c-button -secondary">お問い合わせ</a></p>
+              </div>
+              <!-- /.p-header__buttons -->
+            </div>
+            <!-- /.p-header__cta -->
           </nav>
         </div>
         <!-- /.p-header__inner -->
@@ -96,8 +116,8 @@
       <!-- /.p-hero -->
       <section class="l-spacer -medium p-about">
         <div class="l-container">
-          <div class="l-wapper">
-            <h2 class="c-heading -colorWhite">TOEFL学習で<br />こんな悩みはありませんか？</h2>
+          <div class="l-wrapper">
+            <h2 class="c-heading -colorWhite">TOEFL学習で<br class="u-break -lg">こんな悩みはありませんか？</h2>
             <ul class="p-about__lists">
               <li class="p-about__list">勉強の習慣が<br class="u-break -xxs" />身についていない</li>
               <li class="p-about__list">勉強しているはず<br class="u-break -xxs" />なのに点数が伸びない</li>
@@ -107,7 +127,9 @@
               <div class="p-about__body">
                 <h3 class="p-about__title">Engressは<br /><span>TOEFLに特化したスクール</span>です</h3>
                 <p class="p-about__text">
-                  完全オーダーメイドで、<br />１人１人の悩みに合わせた最適な指導で<br />TOEFLの苦手分野を克服します。
+                  完全オーダーメイドで、<br
+                    class="u-break -md"
+                  />１人１人の悩みに合わせた最適な指導で<br />TOEFLの苦手分野を克服します。
                 </p>
               </div>
               <!-- /.p-about__body -->
@@ -122,66 +144,69 @@
         <div class="l-container">
           <div class="l-wrapper">
             <h2 class="c-heading">TOEFL対策に特化したEngress3つの強み</h2>
-            <div class="p-feature__items">
-              <div class="p-feature__item">
-                <div class="p-feture__body">
-                  <div class="p-feature__label">特長 １</div>
-                  <h3 class="p-feature__title">TOEFLに最適化された<br />無駄のないカリキュラム</h3>
-                  <p class="p-feature__text">
-                    TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。
-                  </p>
+            <div class="p-feature__inner">
+              <div class="p-feature__items">
+                <div class="p-feature__item">
+                  <div class="p-feature__body">
+                    <div class="p-feature__label">特長 １</div>
+                    <h3 class="p-feature__title">TOEFLに最適化された<br />無駄のないカリキュラム</h3>
+                    <p class="p-feature__text">
+                      TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。
+                    </p>
+                  </div>
+                  <!-- /.p-feature__body -->
+                  <div class="p-feature__image">
+                    <img
+                      src="assets/img/common/feature01.png"
+                      alt=""
+                      srcset="assets/img/common/feature01.png, assets/img/common/feature01@2x.png 2x"
+                    />
+                  </div>
+                  <!-- /.p-feature__image -->
                 </div>
-                <!-- /.p-feature__body -->
-                <div class="p-feature__image">
-                  <img
-                    src="assets/img/common/feature01.png"
-                    alt=""
-                    srcset="assets/img/common/feature01.png, assets/img/common/feature01@2x.png 2x"
-                  />
+                <!-- /.p-feature__item -->
+                <div class="p-feature__item -reverse">
+                  <div class="p-feature__body">
+                    <div class="p-feature__label">特長 ２</div>
+                    <h3 class="p-feature__title">日本人指導歴10年以上の<br />経験豊富な講師陣</h3>
+                    <p class="p-feature__text">
+                      Engressの講師陣は、もともと日本人向けにTOEFLを教えていた人が大多数です。また全メンバーがTESOL(英語教授法)を取得しており、知識と経験を兼ね備えている教育のプロフェッショナルです。
+                    </p>
+                  </div>
+                  <!-- /.p-feature__body -->
+                  <div class="p-feature__image">
+                    <img
+                      src="assets/img/common/feature02.png"
+                      alt=""
+                      srcset="assets/img/common/feature02.png, assets/img/common/feature02@2x.png 2x"
+                    />
+                  </div>
+                  <!-- /.p-feature__image -->
                 </div>
-                <!-- /.p-feature__image -->
+                <!-- /.p-feature__item -->
+                <div class="p-feature__item">
+                  <div class="p-feature__body">
+                    <div class="p-feature__label">特長 ３</div>
+                    <h3 class="p-feature__title">平均3ヶ月でTOEFL iBT20点アップ</h3>
+                    <p class="p-feature__text">
+                      Engressは高校生からサラリーマンまで様々な年齢層の方々が通われていますが、完全オーダーメイドのカリキュラムで柔軟に対応しているため、平均3ヶ月でTOEFLスコアを20点アップさせています。
+                    </p>
+                  </div>
+                  <!-- /.p-feature__body -->
+                  <div class="p-feature__image">
+                    <img
+                      src="assets/img/common/feature03.png"
+                      alt=""
+                      srcset="assets/img/common/feature03.png, assets/img/common/feature03@2x.png 2x"
+                    />
+                  </div>
+                  <!-- /.p-feature__image -->
+                </div>
+                <!-- /.p-feature__item -->
               </div>
-              <!-- /.p-feature__item -->
-              <div class="p-feature__item -reverse">
-                <div class="p-feture__body">
-                  <div class="p-feature__label">特長 ２</div>
-                  <h3 class="p-feature__title">日本人指導歴10年以上の<br />経験豊富な講師陣</h3>
-                  <p class="p-feature__text">
-                    Engressの講師陣は、もともと日本人向けにTOEFLを教えていた人が大多数です。また全メンバーがTESOL(英語教授法)を取得しており、知識と経験を兼ね備えている教育のプロフェッショナルです。
-                  </p>
-                </div>
-                <!-- /.p-feature__body -->
-                <div class="p-feature__image">
-                  <img
-                    src="assets/img/common/feature02.png"
-                    alt=""
-                    srcset="assets/img/common/feature02.png, assets/img/common/feature02@2x.png 2x"
-                  />
-                </div>
-                <!-- /.p-feature__image -->
-              </div>
-              <!-- /.p-feature__item -->
-              <div class="p-feature__item">
-                <div class="p-feture__body">
-                  <div class="p-feature__label">特長 ３</div>
-                  <h3 class="p-feature__title">平均3ヶ月でTOEFL iBT20点アップ</h3>
-                  <p class="p-feature__text">
-                    Engressは高校生からサラリーマンまで様々な年齢層の方々が通われていますが、完全オーダーメイドのカリキュラムで柔軟に対応しているため、平均3ヶ月でTOEFLスコアを20点アップさせています。
-                  </p>
-                </div>
-                <!-- /.p-feature__body -->
-                <div class="p-feature__image">
-                  <img
-                    src="assets/img/common/feature03.png"
-                    alt=""
-                    srcset="assets/img/common/feature03.png, assets/img/common/feature03@2x.png 2x"
-                  />
-                </div>
-                <!-- /.p-feature__image -->
-              </div>
-              <!-- /.p-feature__item -->
+              <!-- /.p-feature__items -->
             </div>
-            <!-- /.p-feature__items -->
+            <!-- /.p-feature__inner -->
             <div class="p-featureBottom">
               <h3 class="p-featureBottom__title">Engressの料金プランはこちら</h3>
               <div class="p-featureBottom__button">
@@ -340,96 +365,99 @@
         </div>
         <!-- /.l-container -->
       </section>
-      <div class="l-spacer">
+      <div class="l-spacer l-article">
         <div class="l-container">
-          <div class="l-wrapper p-article">
-            <section class="l-spacer -medium" data-space="lg:reset">
-              <h2 class="c-heading">ブログ</h2>
-              <div class="l-blog">
-                <article class="l-blog__item">
-                  <a href="" class="c-media p-blog">
-                    <div class="c-media__body p-blog__body">
-                      <h3 class="p-blog__title">Engress説明会in大阪の模様をお伝えします</h3>
-                      <p class="p-blog__publish"><time>2020-12-27</time></p>
-                    </div>
-                    <div class="p-blog__image">
-                      <img
-                        src="assets/img/common/sample01.png"
-                        alt=""
-                        srcset="assets/img/common/sample01.png, assets/img/common/sample01@2x.png 2x"
-                      />
-                    </div>
-                    <p class="p-blog__category">カテゴリー</p>
-                  </a>
-                </article>
-                <article class="l-blog__item">
-                  <a href="" class="c-media p-blog">
-                    <div class="c-media__body p-blog__body">
-                      <h3 class="p-blog__title">Engressもくもく会でみんなでTOEFL学習をしませんか？</h3>
-                      <p class="p-blog__publish"><time>2020-12-01</time></p>
-                    </div>
-                    <div class="p-blog__image">
-                      <img
-                        src="assets/img/common/sample02.png"
-                        alt=""
-                        srcset="assets/img/common/sample02.png, assets/img/common/sample02@2x.png 2x"
-                      />
-                    </div>
-                    <p class="p-blog__category">カテゴリー</p>
-                  </a>
-                </article>
-                <article class="l-blog__item">
-                  <a href="" class="c-media p-blog">
-                    <div class="c-media__body p-blog__body">
-                      <h3 class="p-blog__title">TOEFL学習にはコーチング学習が最強である話</h3>
-                      <p class="p-blog__publish"><time>2020-11-20</time></p>
-                    </div>
-                    <div class="p-blog__image">
-                      <img
-                        src="assets/img/common/sample03.png"
-                        alt=""
-                        srcset="assets/img/common/sample03.png, assets/img/common/sample03@2x.png 2x"
-                      />
-                    </div>
-                    <p class="p-blog__category">カテゴリー</p>
-                  </a>
-                </article>
-              </div>
-              <!-- /.l-blog -->
-            </section>
-            <section class="l-spacer -medium" data-space="lg:reset">
-              <h2 class="c-heading">お知らせ</h2>
-              <div class="l-news">
-                <article class="l-news__item">
-                  <a href="" class="p-news">
-                    <div class="p-news__body">
-                      <h3 class="p-news__title">2021年のスケジュールについて</h3>
-                      <p class="p-news__publish"><time>2020-12-01</time></p>
-                    </div>
-                    <!-- /.p-news -->
-                  </a>
-                </article>
-                <article class="l-news__item">
-                  <a href="" class="p-news">
-                    <div class="p-news__body">
-                      <h3 class="p-news__title">11月休校日のお知らせ</h3>
-                      <p class="p-news__publish"><time>2019-11-02</time></p>
-                    </div>
-                    <!-- /.p-news -->
-                  </a>
-                </article>
-                <article class="l-news__item">
-                  <a href="" class="p-news">
-                    <div class="p-news__body">
-                      <h3 class="p-news__title">10月休校日のお知らせ</h3>
-                      <p class="p-news__publish"><time>2020-10-01</time></p>
-                    </div>
-                    <!-- /.p-news -->
-                  </a>
-                </article>
-              </div>
-              <!-- /.p-news -->
-            </section>
+          <div class="l-wrapper">
+            <div class="p-article">
+              <section class="l-spacer -medium" data-space="lg:reset">
+                <h2 class="c-heading -left">ブログ</h2>
+                <div class="l-blog">
+                  <article class="l-blog__item">
+                    <a href="" class="c-media p-blog">
+                      <div class="c-media__body p-blog__body">
+                        <h3 class="p-blog__title">Engress説明会in大阪の模様をお伝えします</h3>
+                        <p class="p-blog__publish"><time>2020-12-27</time></p>
+                      </div>
+                      <div class="p-blog__image">
+                        <img
+                          src="assets/img/common/sample01.png"
+                          alt=""
+                          srcset="assets/img/common/sample01.png, assets/img/common/sample01@2x.png 2x"
+                        />
+                      </div>
+                      <p class="p-blog__category">カテゴリー</p>
+                    </a>
+                  </article>
+                  <article class="l-blog__item">
+                    <a href="" class="c-media p-blog">
+                      <div class="c-media__body p-blog__body">
+                        <h3 class="p-blog__title">Engressもくもく会でみんなでTOEFL学習をしませんか？</h3>
+                        <p class="p-blog__publish"><time>2020-12-01</time></p>
+                      </div>
+                      <div class="p-blog__image">
+                        <img
+                          src="assets/img/common/sample02.png"
+                          alt=""
+                          srcset="assets/img/common/sample02.png, assets/img/common/sample02@2x.png 2x"
+                        />
+                      </div>
+                      <p class="p-blog__category">カテゴリー</p>
+                    </a>
+                  </article>
+                  <article class="l-blog__item">
+                    <a href="" class="c-media p-blog">
+                      <div class="c-media__body p-blog__body">
+                        <h3 class="p-blog__title">TOEFL学習にはコーチング学習が最強である話</h3>
+                        <p class="p-blog__publish"><time>2020-11-20</time></p>
+                      </div>
+                      <div class="p-blog__image">
+                        <img
+                          src="assets/img/common/sample03.png"
+                          alt=""
+                          srcset="assets/img/common/sample03.png, assets/img/common/sample03@2x.png 2x"
+                        />
+                      </div>
+                      <p class="p-blog__category">カテゴリー</p>
+                    </a>
+                  </article>
+                </div>
+                <!-- /.l-blog -->
+              </section>
+              <section class="l-spacer -medium" data-space="lg:reset">
+                <h2 class="c-heading -left">お知らせ</h2>
+                <div class="l-news">
+                  <article class="l-news__item">
+                    <a href="" class="p-news">
+                      <div class="p-news__body">
+                        <h3 class="p-news__title">2021年のスケジュールについて</h3>
+                        <p class="p-news__publish"><time>2020-12-01</time></p>
+                      </div>
+                      <!-- /.p-news -->
+                    </a>
+                  </article>
+                  <article class="l-news__item">
+                    <a href="" class="p-news">
+                      <div class="p-news__body">
+                        <h3 class="p-news__title">11月休校日のお知らせ</h3>
+                        <p class="p-news__publish"><time>2019-11-02</time></p>
+                      </div>
+                      <!-- /.p-news -->
+                    </a>
+                  </article>
+                  <article class="l-news__item">
+                    <a href="" class="p-news">
+                      <div class="p-news__body">
+                        <h3 class="p-news__title">10月休校日のお知らせ</h3>
+                        <p class="p-news__publish"><time>2020-10-01</time></p>
+                      </div>
+                      <!-- /.p-news -->
+                    </a>
+                  </article>
+                </div>
+                <!-- /.p-news -->
+              </section>
+            </div>
+            <!-- /.p-article -->
           </div>
           <!-- /.l-wrapper -->
         </div>
@@ -447,7 +475,7 @@
           <p class="p-footerCta__contact"><a href="">お問い合わせ</a></p>
         </div>
         <!-- /.p-footerCta -->
-        <div class="p-footerInfo">
+        <div class="l-wrapper p-footerInfo">
           <p class="p-footerInfo__text">お電話でのお問い合わせはこちら</p>
           <p class="p-footerInfo__tel"><a href="tel:0123-456-7890">0120-456-7890</a></p>
           <p class="p-footerInfo__time">平日<time class="-pl">08:00</time>~<time>20:00</time></p>
@@ -494,27 +522,9 @@
           <!-- /.l-container -->
         </div>
         <!-- /.p-footerBottom -->
-        <p class="p-footer__copyright"><small>&copy; 2020 Engress.</small></p>
+        <p class="l-wrapper p-footer__copyright"><small>&copy; 2020 Engress.</small></p>
       </div>
       <!-- /.l-container -->
     </footer>
-    <script defer>
-//       const faq = document.querySelectorAll(".js-faq");
-//    const tog = function () {
-//   const content = this.childNodes[3];
-//   content.classList.toggle("is-open");
-
-// };
-// for (let i = 0; i < faq.length; i++) {
-//   faq[i].addEventListener("click", tog);
-// }
-
-class Accordion {
-  constractor(selector) {
-    this.DOM = {};
-    console.log(this.DOM);
-  }
-}
-    </script>
   </body>
 </html>

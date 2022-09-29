@@ -9,50 +9,126 @@
   background-color: $base-color;
   &__inner {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 14px 0;
+
+    @include mq(lg) {
+      padding: 15px 0;
+    }
   }
 
   &__title {
     position: relative;
     z-index: 5;
     line-height: 1;
+
+    @include mq(xl) {
+      margin-left: 5px;
+    }
+  }
+
+  &__nav {
+    @include mq(lg) {
+      display: flex;
+      align-items: center;
+      width: 82%;
+    }
+
+    @include mq(xl) {
+      width: 86%;
+    }
+  }
+
+  &__cta {
+    &.-lg {
+      display: none;
+
+      @include mq(lg) {
+        display: flex;
+        align-items: flex-end;
+        max-width: 460px;
+        margin-left: auto;
+      }
+    }
   }
 
   &__info {
     display: none;
+
+    @include mq(lg) {
+      display: block;
+      text-align: right;
+    }
+
+    > .-time {
+      font-size: 0.75rem;
+    }
+
+    > .-tel {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+
+      > img {
+        padding-right: 5px;
+      }
+    }
   }
 
   &__buttons {
     @include mq(lg) {
       display: flex;
       align-items: center;
+      padding-left: 20px;
     }
   }
 
   &__button {
-    width: 142px;
     margin: 0 auto;
     padding-top: 30px;
+    text-align: center;
 
     @include mq(lg) {
       padding-top: 0;
+      padding-left: 10px;
+      &:first-child {
+        padding-left: 0;
+      }
     }
 
     > .-primary,
     .-secondary {
       display: block;
+      width: 142px;
       padding: 10px 0;
       border-radius: 5px;
       color: $base-color;
       font-weight: 700;
+
+      @include mq(lg) {
+        width: 125px;
+      }
+
+      @include mq(xl) {
+        padding: 13px 0;
+      }
     }
 
     > .-primary {
       background-color: $sub-color;
+
+      @include mq(xl) {
+        width: 142px;
+      }
     }
 
     > .-secondary {
       background-color: $main-color;
+
+      @include mq(xl) {
+        width: 137px;
+      }
     }
   }
 }

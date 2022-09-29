@@ -1,15 +1,11 @@
 @charset 'UTF-8';
 @use "sass:math";
 @use "../global" as *;
-/*
-  Main
------------------------------------------------------*/
-.l-main {
-  display: block;
-  padding-top: 60px;
-  clear: both;
 
-  @include mq(lg) {
-    padding-top: 80px;
-  }
+/*
+  Wrapper
+-----------------------------------------------------*/
+.l-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
 }

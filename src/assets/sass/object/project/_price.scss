@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Price
+*/
+.p-price {
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0;
+    margin-top: 40px;
+
+    @include mq(lg) {
+      margin-top: 60px;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    width: 150px;
+    padding: 8px 4px;
+    background-color: $main-color;
+    color: $base-color;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+
+    @include mq(lg) {
+      width: 280px;
+      padding: 28px 4px 29px;
+      font-size: 1.375rem;
+    }
+  }
+
+  &__plus {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.25rem;
+
+    @include mq(lg) {
+      padding: 0 40px;
+      font-size: 3rem;
+    }
+  }
+
+  &__text {
+    padding-top: 45px;
+    line-height: 1.6875;
+  }
+}

@@ -38,12 +38,14 @@
       background-color: $main-color;
 
       @include mq(lg) {
+        right: 20px;
         width: 25px;
       }
     }
 
     &::before {
       transform: translateY(-50%);
+      transition: opacity 0.2s cubic-bezier(1, -0.29, 0, 0.99);
     }
 
     &::after {
@@ -52,6 +54,10 @@
     }
 
     &.is-open {
+      &::before {
+        opacity: 0;
+      }
+
       &::after {
         transform: translateY(-50%) rotate(0deg);
       }
@@ -68,17 +74,17 @@
     font-size: 0.875rem;
     font-weight: 400;
 
-    @include mq(lg) {
-      padding: 18px 26px;
-      font-size: 1rem;
-      line-height: 1.6875;
-    }
-
     &.is-open {
       height: auto;
       margin-top: 10px;
       padding: 10px;
       opacity: 1;
+
+      @include mq(lg) {
+        padding: 18px 26px;
+        font-size: 1rem;
+        line-height: 1.6875;
+      }
     }
   }
 }

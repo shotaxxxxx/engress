@@ -18,8 +18,15 @@ import Toggle from "./lib/Toggle";
 // import { inview } from './lib/inview';
 // import { faq, accordion } from "./lib/Accordion";
 import Accordion from "./lib/Accordion";
+import ScrollHint from "scroll-hint";
 
 new Loading();
 // new SmoothScroll('a[href*="#"]');
 new Toggle(".js-drawer");
 new Accordion();
+new ScrollHint(".js-scroll", {
+  enableOverflowScrolling: true,
+  i18n: {
+    scrollable: "スクロールできます",
+  },
+});

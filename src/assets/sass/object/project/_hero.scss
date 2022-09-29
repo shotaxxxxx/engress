@@ -17,6 +17,10 @@
   background-position: center;
   background-size: cover;
 
+  @include mq(md) {
+    height: 476px;
+  }
+
   &__image {
     display: block;
 
@@ -35,12 +39,23 @@
   &__copy {
     font-size: 2rem;
     font-weight: 700;
+
+    @include mq(lg) {
+      font-size: 3rem;
+      line-height: 1.35416;
+    }
   }
 
   &__subcopy {
     padding-top: 10px;
     font-size: 0.875rem;
     font-weight: 400;
+
+    @include mq(lg) {
+      padding-top: 25px;
+      font-size: 1.125rem;
+      line-height: 1.7222;
+    }
   }
 
   &__button {
@@ -48,17 +63,28 @@
     margin: 0 auto;
     padding-top: 40px;
     font-size: 0.875rem;
+    font-weight: 700;
+
+    @include mq(lg) {
+      width: 260px;
+      padding-top: 51px;
+      font-size: 1rem;
+    }
 
     > .-rounded {
       display: block;
       padding: 10px 0;
       border-radius: 31px;
       background-color: $sub-color;
+
+      @include mq(lg) {
+        padding: 18px 0;
+      }
     }
   }
 
   &__contact {
-    padding-top: 20px;
+    padding-top: 22px;
 
     > a {
       color: $secondary-text-color;

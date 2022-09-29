@@ -7,6 +7,10 @@
 .l-news {
   padding-top: 40px;
 
+  @include mq(lg) {
+    padding-top: 30px;
+  }
+
   &__item {
     padding-top: 30px;
 

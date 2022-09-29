@@ -7,10 +7,19 @@
 */
 .p-about {
   background-color: $main-color;
+
   &__lists {
     padding-top: 30px;
+
     @include mq(md) {
       display: flex;
+      justify-content: space-between;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    @include mq(lg) {
+      padding-top: 60px;
     }
   }
 
@@ -23,6 +32,11 @@
       padding-top: 0;
     }
 
+    @include mq(lg) {
+      font-size: 1.125rem;
+      line-height: 2.16667;
+    }
+
     &:first-child {
       padding-top: 0;
     }
@@ -32,11 +46,23 @@
     margin-top: 30px;
     padding: 6px;
     background-color: $base-color;
+
+    @include mq(lg) {
+      margin-top: 83px;
+    }
   }
 
   &__body {
     padding: 8px 0;
     border: 5px solid $main-color;
+
+    @include mq(md) {
+      padding: 16px 0;
+    }
+
+    @include mq(lg) {
+      padding: 21px 0;
+    }
   }
 
   &__title {
@@ -60,6 +86,7 @@
     text-align: center;
 
     @include mq(lg) {
+      padding-top: 25px;
       font-size: 1.125rem;
     }
   }
