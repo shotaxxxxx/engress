@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="各ページ固有の説明文を124文字程度で" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="【twitterのアカウント名】" />
+    <meta property="og:url" content="【サイトURL】" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="【サイト名】 | 〇〇〇〇" />
+    <meta property="og:description" content="各ページ固有の説明文を124文字程度で" />
+    <meta property="og:site_name" content="【サイト名】" />
+    <meta property="og:image" content="【サイトURL】OGP画像のファイルパス" />
+    <meta property="og:locale" content="ja_JP" />
+    <link rel="canonical" href="【サイトURL】/" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="author" href="/humans.txt" />
+    <title>Engress | ブログ</title>
+    <script src="/assets/js/main.bundle.js" defer></script>
+    <link rel="stylesheet" href="assets/css/common.css" />
+  </head>
+  <body>
+    <header class="l-header p-header">
+      <div class="l-container">
+        <div class="p-header__inner">
+          <h1 class="p-header__title">
+            <span class="u-visuallyHidden" lang="en">Engress</span>
+            <a href="#" class="p-logo">
+              <img
+                src="assets/img/common/header-logo.png"
+                alt=""
+                srcset="assets/img/common/header-logo.png, assets/img/common/header-logo@2x.png 2x"
+              />
+            </a>
+          </h1>
+          <nav class="p-header__nav">
+            <h2 class="u-visuallyHidden">サイト内メニュー</h2>
+            <button
+              type="button"
+              class="js-drawer c-button p-hamburger"
+              aria-controls="global-nav"
+              aria-expanded="false"
+            >
+              <span class="p-hamburger__line">
+                <span class="u-visuallyHidden">メニューを開閉する</span>
+              </span>
+            </button>
+            <ul id="global-nav" class="p-globalNav">
+              <li class="p-globalNav__item"><a href="index.html" class="p-globalNav__link">ホーム</a></li>
+              <li class="p-globalNav__item"><a href="#" class="p-globalNav__link">お知らせ</a></li>
+              <li class="p-globalNav__item"><a href="blog.html" class="p-globalNav__link">ブログ</a></li>
+              <li class="p-globalNav__item"><a href="price.html" class="p-globalNav__link">コース・料金</a></li>
+              <li class="p-globalNav__item -xxs">
+                <div class="p-header__cta">
+                  <div class="p-header__info">
+                    <p class="-time">平日<time>08:00</time>〜<time>20:00</time></p>
+                    <p class="-tel">
+                      <img
+                        src="assets/img/common/tel.png"
+                        alt="tel"
+                        srcset="assets/img/common/tel.png, assets/img/common/tel@2x.png 2x"
+                      />
+                      0120-456-7890
+                    </p>
+                  </div>
+                  <!-- /.p-header__info -->
+                  <div class="p-header__buttons">
+                    <p class="p-header__button"><a href="#" class="c-button -primary">資料請求</a></p>
+                    <p class="p-header__button"><a href="#" class="c-button -secondary">お問い合わせ</a></p>
+                  </div>
+                  <!-- /.p-header__buttons -->
+                </div>
+                <!-- /.p-header__cta -->
+              </li>
+            </ul>
+            <div class="p-header__cta -lg">
+              <div class="p-header__info">
+                <p class="-time">平日<time>08:00</time>〜<time>20:00</time></p>
+                <p class="-tel">
+                  <img
+                    src="assets/img/common/tel.png"
+                    alt="tel"
+                    srcset="assets/img/common/tel.png, assets/img/common/tel@2x.png 2x"
+                  />
+                  0120-456-7890
+                </p>
+              </div>
+              <!-- /.p-header__info -->
+              <div class="p-header__buttons">
+                <p class="p-header__button"><a href="#" class="c-button -primary">資料請求</a></p>
+                <p class="p-header__button"><a href="#" class="c-button -secondary">お問い合わせ</a></p>
+              </div>
+              <!-- /.p-header__buttons -->
+            </div>
+            <!-- /.p-header__cta -->
+          </nav>
+        </div>
+        <!-- /.p-header__inner -->
+      </div>
+      <!-- /.l-container -->
+    </header>
+    <main class="l-main">
+      <div class="p-pageHero">
+        <img
+          class="p-pageHero__image"
+          src="assets/img/blog/blog-fv.png"
+          srcset="assets/img/blog/blog-fv.png, assets/img/blog/blog-fv@2x.png 2x"
+          alt=""
+        />
+        <p class="p-pageHero__title">ブログ</p>
+      </div>
+      <!-- /.p-pageHero -->
+      <div class="breadcrumbs">
+        <div class="breadcrumb_inner">
+          <span><a href="index.html">ホーム</a></span>
+          <span>ブログ</span>
+        </div>
+        <!-- /.breadcrumb_inner -->
+      </div>
+      <!-- /.breadcrunmbs -->
+      <section class="l-spacer -medium">
+        <div class="l-container">
+          <div class="l-wrapper">
+            <div class="l-inner">
+              <h2 class="c-heading">新着一覧</h2>
+              <div class="l-blogPage">
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">ブログタイトルテキストテキストテキストテキスト</h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2020-12-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog01.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ1</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">ブログタイトルテキストテキストテキストテキストテキスト</h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-12-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog02.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ2</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">
+                        ブログタイトルテキストテキストテキストテキストテキストテキストテキスト
+                      </h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-11-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog03.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ3</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">
+                        ブログタイトルテキストテキストテキストテキストテキストテキストテキスト
+                      </h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-11-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog02.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ2</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">
+                        ブログタイトルテキストテキストテキストテキストテキストテキストテキスト
+                      </h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-11-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog02.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ2</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">
+                        ブログタイトルテキストテキストテキストテキストテキストテキストテキスト
+                      </h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-11-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog02.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ2</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">
+                        ブログタイトルテキストテキストテキストテキストテキストテキストテキスト
+                      </h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-11-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog02.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ2</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">
+                        ブログタイトルテキストテキストテキストテキストテキストテキストテキスト
+                      </h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-11-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog02.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ2</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">
+                        ブログタイトルテキストテキストテキストテキストテキストテキストテキスト
+                      </h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-11-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog02.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ2</p>
+                  </a>
+                </article>
+                <article class="l-blogPage__item">
+                  <a href="blog-single.html" class="c-media p-blogPage">
+                    <div class="c-media__body p-blogPage__body">
+                      <h3 class="p-blogPage__title">
+                        ブログタイトルテキストテキストテキストテキストテキストテキストテキスト
+                      </h3>
+                      <p class="p-blogPage__text">
+                        記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p class="p-blogPage__publish"><time>2019-11-01</time></p>
+                    </div>
+                    <p class="p-blogPage__image">
+                      <img
+                        src="assets/img/common/blog02.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-blogPage__category c-category">カテゴリ2</p>
+                  </a>
+                </article>
+                <nav class="navigation pagination" role="navigation" aria-label="投稿">
+                  <h2 class="u-visuallyHidden">投稿ナビゲーション</h2>
+                  <div class="nav-links">
+                    <ul class="page-numbers">
+                      <li><a class="page-numbers" href="http://localhost:80/archives/">1</a></li>
+                      <li><span aria-current="page" class="page-numbers current">2</span></li>
+                      <li><a class="page-numbers" href="http://localhost:80/archives/page/3">3</a></li>
+                      <li><span class="page-numbers dots">…</span></li>
+                      <li><a class="page-numbers" href="http://localhost:80/archives/page/6">5</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <!-- /.l-blogPage -->
+            </div>
+            <!-- /.l-inner -->
+          </div>
+          <!-- /.l-wrapper -->
+        </div>
+        <!-- /.l-container -->
+      </section>
+    </main>
+    <footer class="l-footer p-footer">
+      <div class="l-container">
+        <div class="p-footerCta">
+          <p class="p-footerCta__text">まずは無料で資料請求から</p>
+          <div class="p-footerCta__button">
+            <a href="" class="c-button -rounded">資料請求</a>
+          </div>
+          <p class="p-footerCta__contact"><a href="">お問い合わせ</a></p>
+        </div>
+        <!-- /.p-footerCta -->
+        <div class="l-wrapper p-footerInfo">
+          <p class="p-footerInfo__text">お電話でのお問い合わせはこちら</p>
+          <p class="p-footerInfo__tel"><a href="tel:0123-456-7890">0120-456-7890</a></p>
+          <p class="p-footerInfo__time">平日<time class="-pl">08:00</time>~<time>20:00</time></p>
+        </div>
+        <!-- /.p-footerInfo -->
+        <div class="p-footerBottom">
+          <div class="l-container">
+            <div class="l-wrapper">
+              <div class="p-footerBottom__body">
+                <ul class="p-footerNav">
+                  <li class="p-footerNav__item"><a href="index.html" class="p-footerNav__link">ホーム</a></li>
+                  <li class="p-footerNav__item"><a href="#" class="p-footerNav__link">お知らせ</a></li>
+                  <li class="p-footerNav__item"><a href="blog.html" class="p-footerNav__link">ブログ</a></li>
+                  <li class="p-footerNav__item"><a href="plan.html" class="p-footerNav__link">コース・料金</a></li>
+                </ul>
+                <address class="p-footer__address">
+                  <span class="u-visuallyHidden" lang="en">Engress</span>
+                  <a href="" class="p-logo -secondary">
+                    <img
+                      src="assets/img/common/footer-logo.png"
+                      alt=""
+                      srcset="assets/img/common/footer-logo.png, assets/img/common/footer-logo@2x.png 2x"
+                    />
+                  </a>
+                  <div class="p-footer__siteinfo">
+                    <p class="p-footer__tel">
+                      <span
+                        ><img
+                          src="assets/img/common/tel-white.png"
+                          alt=""
+                          srcset="assets/img/common/tel-white.png, assets/img/common/tel-white@2x.png 2x"
+                      /></span>
+                      0123-456-7890
+                    </p>
+                    <p class="p-footer__time">平日<time>08:00</time>~<time>20:00</time></p>
+                  </div>
+                </address>
+                <!-- /.p-footerBottom__info -->
+              </div>
+              <!-- /.p-footerBody -->
+            </div>
+            <!-- /.l-wrapper -->
+          </div>
+          <!-- /.l-container -->
+        </div>
+        <!-- /.p-footerBottom -->
+        <p class="l-wrapper p-footer__copyright"><small>&copy; 2020 Engress.</small></p>
+      </div>
+      <!-- /.l-container -->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Sidebar
+*/
+.p-sidebar {
+  @include mq(md) {
+    width: 35%;
+    max-width: 269px;
+  }
+
+  &__box {
+    width: 45%;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: $main-color;
+    color: $base-color;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+
+    @include mq(md) {
+      width: 100%;
+      font-size: 1.3125rem;
+    }
+  }
+
+  &__category {
+    padding-top: 30px;
+  }
+
+  &__lists {
+    padding-top: 30px;
+  }
+
+  &__list {
+    position: relative;
+    padding-top: 6px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      transform: translateY(-50%);
+      border-radius: 999px;
+      background-color: $main-color;
+    }
+  }
+
+  &__link {
+    padding-left: 12px;
+    color: $main-color;
+    font-weight: 700;
+  }
+}

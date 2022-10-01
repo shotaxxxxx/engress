@@ -1,0 +1,81 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Recommend
+*/
+.p-recommend {
+  justify-content: space-between;
+
+  &__heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    @include mq(md) {
+      font-size: 1.625rem;
+    }
+  }
+
+  &__body {
+    width: 53%;
+
+    @include mq(sm) {
+      width: 57%;
+    }
+  }
+
+  &__title {
+    order: 1;
+    padding-top: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: underline;
+
+    @include mq(md) {
+      font-size: 1.125rem;
+    }
+
+    @include mq(lg) {
+      padding-top: 28px;
+    }
+  }
+
+  &__publish {
+    order: 0;
+    font-size: 0.75rem;
+
+    @include mq(md) {
+      font-size: 1rem;
+    }
+  }
+
+  &__image {
+    width: 45%;
+
+    @include mq(sm) {
+      width: 40%;
+    }
+
+    @include mq(md) {
+      max-width: 210px;
+    }
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__category {
+    padding: 4px;
+    font-size: 0.75rem;
+    text-align: center;
+
+    @include mq(md) {
+      width: 80px;
+    }
+  }
+}

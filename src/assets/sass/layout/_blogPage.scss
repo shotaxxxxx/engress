@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../global" as *;
+
+/*
+  BlogPage
+-----------------------------------------------------*/
+.l-blogPage {
+  margin-top: 50px;
+
+  @include mq(lg) {
+    margin-top: 60px;
+  }
+
+  &__item {
+    max-width: 500px;
+    margin: 30px auto 0;
+    margin-top: 30px;
+
+    @include mq(sm) {
+      max-width: 570px;
+    }
+
+    @include mq(md) {
+      max-width: 100%;
+    }
+
+    @include mq(lg) {
+      margin-top: 60px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

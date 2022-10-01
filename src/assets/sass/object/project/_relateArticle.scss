@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  relateArticle
+*/
+.p-relateArticle {
+  justify-content: space-between;
+
+  &__body {
+    width: 53%;
+
+    @include mq(sm) {
+      width: 57%;
+    }
+  }
+
+  &__title {
+    font-size: 0.875rem;
+    text-decoration: underline;
+
+    @include mq(md) {
+      font-size: 1rem;
+    }
+  }
+
+  &__image {
+    width: 45%;
+
+    @include mq(sm) {
+      width: 40%;
+    }
+
+    @include mq(md) {
+      max-width: 100px;
+    }
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

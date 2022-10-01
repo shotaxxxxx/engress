@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../global" as *;
+/*
+  sidebar
+-----------------------------------------------------*/
+.l-sidebar {
+  padding-top: 50px;
+
+  @include mq(md) {
+    padding-top: 0;
+  }
+
+  &__items {
+    padding-top: 30px;
+  }
+
+  &__item {
+    padding-top: 20px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    @include mq(md) {
+      padding-top: 42px;
+    }
+  }
+}

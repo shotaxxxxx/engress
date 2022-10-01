@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Category
+*/
+.c-category {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: $main-color;
+  color: $base-color;
+}

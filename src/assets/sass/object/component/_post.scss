@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+/*
+  Post
+*/
+.c-post {
+  &__title {
+    font-size: 1.375rem;
+    font-weight: 700;
+
+    @include mq(lg) {
+      font-size: 1.75rem;
+      line-height: 1.5;
+    }
+  }
+}
