@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../global" as *;
+/*
+  NewsPage
+-----------------------------------------------------*/
+.l-newsPage {
+  margin-top: 40px;
+  border-top: 1px solid $news-border-corlor;
+
+  &__item {
+    border-bottom: 1px solid $news-border-corlor;
+  }
+}

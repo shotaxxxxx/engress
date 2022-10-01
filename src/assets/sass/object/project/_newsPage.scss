@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  NewsPage
+*/
+.p-newsPage {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  padding: 16px 0;
+  color: $main-color;
+
+  &__title {
+    width: 70%;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-decoration: underline;
+
+    @include mq(sm) {
+      width: 80%;
+    }
+
+    @include mq(md) {
+      overflow: hidden;
+      font-size: 1rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    @include mq(lg) {
+      width: 85%;
+    }
+  }
+
+  &__publish {
+    width: 30%;
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    @include mq(sm) {
+      width: 20%;
+    }
+
+    @include mq(md) {
+      font-size: 1rem;
+    }
+
+    @include mq(lg) {
+      width: 15%;
+    }
+  }
+}
