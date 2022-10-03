@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="author" href="/humans.txt" />
-    <title>Engress | お知らせ</title>
+    <title>Engress | お問い合わせ</title>
     <script src="/assets/js/main.bundle.js" defer></script>
     <link rel="stylesheet" href="assets/css/common.css" />
   </head>
@@ -69,8 +69,8 @@
                   </div>
                   <!-- /.p-header__info -->
                   <div class="p-header__buttons">
-                    <p class="p-header__button"><a href="contact.html" class="c-button -primary">資料請求</a></p>
-                    <p class="p-header__button"><a href="contact.html" class="c-button -secondary">お問い合わせ</a></p>
+                    <p class="p-header__button"><a href="#" class="c-button -primary">資料請求</a></p>
+                    <p class="p-header__button"><a href="#" class="c-button -secondary">お問い合わせ</a></p>
                   </div>
                   <!-- /.p-header__buttons -->
                 </div>
@@ -91,8 +91,8 @@
               </div>
               <!-- /.p-header__info -->
               <div class="p-header__buttons">
-                <p class="p-header__button"><a href="contact.html" class="c-button -primary">資料請求</a></p>
-                <p class="p-header__button"><a href="contact.html" class="c-button -secondary">お問い合わせ</a></p>
+                <p class="p-header__button"><a href="#" class="c-button -primary">資料請求</a></p>
+                <p class="p-header__button"><a href="#" class="c-button -secondary">お問い合わせ</a></p>
               </div>
               <!-- /.p-header__buttons -->
             </div>
@@ -104,11 +104,20 @@
       <!-- /.l-container -->
     </header>
     <main class="l-main">
+      <div class="p-pageHero">
+        <img
+          class="p-pageHero__image"
+          src="assets/img/common/cta.png"
+          srcset="assets/img/common/cta.png, assets/img/common/cta@2x.png 2x"
+          alt=""
+        />
+        <p class="p-pageHero__title -contact">お問い合わせ・資料請求</p>
+      </div>
+      <!-- /.p-pageHero -->
       <div class="breadcrumbs">
         <div class="breadcrumb_inner">
           <span><a href="index.html">ホーム</a></span>
-          <span><a href="news.html">お知らせ</a></span>
-          <span>お知らせのタイトルテキストテキストテキストテキストテキストテキストテキスト</span>
+          <span>お問い合わせ</span>
         </div>
         <!-- /.breadcrumb_inner -->
       </div>
@@ -117,26 +126,66 @@
         <div class="l-container">
           <div class="l-wrapper">
             <div class="l-inner">
-              <article class="p-newsSingle">
-                <h1 class="p-newsSingle__title">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキスト</h1>
-                <p class="p-newsSingle__publish"><time>2020-10-01</time></p>
-                <div class="p-newsSingle__content">
-                  <h1>見出し1</h1>
-                  <p>本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                  <h2>見出し2</h2>
-                  <p>本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                  <blockquote>
-                    <p>引用文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                  </blockquote>
-                  <img src="assets/img/common/blog4.jpg" alt="">
-                  <ul>
-                    <li>リストリストリストリストリスト</li>
-                    <li>リストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
-                  </ul>
-                  <a href="">テキストリンクテキストリンク</a>
-                </div>
-                <!-- /.p-newsSingle__content -->
-              </article>
+              <div class="p-contact">
+                <p class="p-contact__text">
+                  弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。
+                </p>
+                <form action="" class="p-contact__form">
+                  <dl class="p-contact__def">
+                    <dt class="p-contact__def--tit"><label for="company">会社名</label></dt>
+                    <dd class="p-contact__def--data"><input type="text" id="company" placeholder="Engress" /></dd>
+                    <dt class="p-contact__def--tit"><label for="name">氏名</label></dt>
+                    <dd class="p-contact__def--data"><input type="text" id="name" placeholder="田中　太郎" /></dd>
+                    <dt class="p-contact__def--tit"><label for="email">メールアドレス</label></dt>
+                    <dd class="p-contact__def--data">
+                      <input type="email" id="email" placeholder="example@example.com" />
+                    </dd>
+                    <dt class="p-contact__def--tit"><label for="tel">電話番号</label></dt>
+                    <dd class="p-contact__def--data"><input type="tel" id="tel" placeholder="01-2345-6789" /></dd>
+                    <dt class="p-contact__def--tit">
+                      <p>お問い合わせの種類を選択してください（<span>資料請求の方は資料請求を選択ください</span>）</p>
+                    </dt>
+                    <dd class="p-contact__def--data -radio">
+                      <input type="radio" id="purpose1" value="negotiation" />
+                      <label for="purpose1">商談のご商談</label>
+                    </dd>
+                    <dd class="p-contact__def--data -radio">
+                      <input type="radio" id="purpose2" value="contact" />
+                      <label for="purpose2">サービスに関するお問い合わせ</label>
+                    </dd>
+                    <dd class="p-contact__def--data -radio">
+                      <input type="radio" id="purpose3" value="document" />
+                      <label for="purpose3">資料請求</label>
+                    </dd>
+                    <dd class="p-contact__def--data -radio">
+                      <input type="radio" id="purpose4" value="other" />
+                      <label for="purpose4">その他</label>
+                    </dd>
+                    <dt class="p-contact__def--tit"><label for="inquiry">お問い合わせ内容</label></dt>
+                    <dd class="p-contact__def--data">
+                      <textarea name="inquiery" id="inquiry" cols="80" rows="8" placeholder="入力して下さい"></textarea>
+                    </dd>
+                  </dl>
+                  <div class="p-contact__check">
+                    <p class="p-contact_privacyText">
+                      <button type="button" class="p-contact__link">
+                      プライバシーポリシー</button
+                    >に同意の上、<br class="u-break -md">送信ください。</p>
+                    <div class="p-contact__checkbox">
+                      <label
+                        ><input type="checkbox" name="agree" value="同意します" />
+                        <span>プライバシーポリシーに同意する</span>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- /.p-contact__check -->
+                  <div class="p-contact__button">
+                    <button type="submit" class="c-button">送信する</button>
+                  </div>
+                  <!-- /.p-contact__button -->
+                </form>
+              </div>
+              <!-- /.p-contact -->
             </div>
             <!-- /.l-inner -->
           </div>
@@ -144,24 +193,7 @@
         </div>
         <!-- /.l-container -->
       </div>
-      <!-- /.l-spacer -->
     </main>
-    <section>
-      <div class="p-footerCta">
-        <p class="p-footerCta__text">まずは無料で資料請求から</p>
-        <div class="p-footerCta__button">
-          <a href="" class="c-button -rounded">資料請求</a>
-        </div>
-        <p class="p-footerCta__contact"><a href="">お問い合わせ</a></p>
-      </div>
-      <!-- /.p-footerCta -->
-      <div class="l-wrapper p-footerInfo">
-        <p class="p-footerInfo__text">お電話でのお問い合わせはこちら</p>
-        <p class="p-footerInfo__tel"><a href="tel:0123-456-7890">0120-456-7890</a></p>
-        <p class="p-footerInfo__time">平日<time class="-pl">08:00</time>~<time>20:00</time></p>
-      </div>
-      <!-- /.p-footerInfo -->
-    </section>
     <footer class="l-footer p-footer">
       <div class="l-container">
         <div class="p-footerBottom">
