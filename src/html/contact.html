@@ -124,7 +124,7 @@
       <!-- /.breadcrunmbs -->
       <div class="l-spacer -medium">
         <div class="l-container">
-          <div class="l-wrapper">
+          <div class="l-wrapper -contact">
             <div class="l-inner">
               <div class="p-contact">
                 <p class="p-contact__text">
@@ -146,20 +146,28 @@
                       <p>お問い合わせの種類を選択してください（<span>資料請求の方は資料請求を選択ください</span>）</p>
                     </dt>
                     <dd class="p-contact__def--data -radio">
-                      <input type="radio" id="purpose1" value="negotiation" />
-                      <label for="purpose1">商談のご商談</label>
+                      <label>
+                        <input type="radio" name="kind" value="ご相談" />
+                        <span>商談のご相談</span>
+                      </label>
                     </dd>
                     <dd class="p-contact__def--data -radio">
-                      <input type="radio" id="purpose2" value="contact" />
-                      <label for="purpose2">サービスに関するお問い合わせ</label>
+                      <label>
+                        <input type="radio" name="kind" value="お問い合わせ" />
+                        <span>サービスに関するお問い合わせ</span>
+                      </label>
                     </dd>
                     <dd class="p-contact__def--data -radio">
-                      <input type="radio" id="purpose3" value="document" />
-                      <label for="purpose3">資料請求</label>
+                      <label>
+                        <input type="radio" name="kind" value="資料" />
+                        <span>資料請求</span>
+                      </label>
                     </dd>
                     <dd class="p-contact__def--data -radio">
-                      <input type="radio" id="purpose4" value="other" />
-                      <label for="purpose4">その他</label>
+                      <label>
+                        <input type="radio" name="kind" value="その他" />
+                        <span>その他</span>
+                      </label>
                     </dd>
                     <dt class="p-contact__def--tit"><label for="inquiry">お問い合わせ内容</label></dt>
                     <dd class="p-contact__def--data">
@@ -169,8 +177,7 @@
                   <div class="p-contact__check">
                     <p class="p-contact_privacyText">
                       <button type="button" class="p-contact__link">
-                      プライバシーポリシー</button
-                    >に同意の上、<br class="u-break -md">送信ください。</p>
+                      プライバシーポリシー</button>に同意の上、<br class="u-break -md">送信ください。</p>
                     <div class="p-contact__checkbox">
                       <label
                         ><input type="checkbox" name="agree" value="同意します" />

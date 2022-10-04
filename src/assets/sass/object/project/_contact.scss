@@ -48,6 +48,7 @@
   textarea {
     width: 100%;
     padding: 8px 14px;
+    border: 1px solid $main-color;
 
     @include mq(lg) {
       padding: 15px 20px;
@@ -75,6 +76,91 @@
     color: $sub-color;
     text-decoration: underline;
     appearance: none;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+
+    + span {
+      display: inline-block;
+      position: relative;
+      padding: 4px 4px 4px 39px;
+      line-height: 1;
+      vertical-align: middle;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+  }
+
+  input[type="radio"] {
+    + span {
+      &::before {
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%);
+        border: 1px solid $secondary-border-color;
+        border-radius: 50%;
+      }
+    }
+
+    &:checked {
+      + span {
+        &::after {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 4px;
+          width: 12px;
+          height: 12px;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+
+    + span {
+      &::before {
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%);
+        border: 1px solid $secondary-border-color;
+      }
+    }
+
+    &:checked {
+      + span {
+        &::after {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 4px;
+          width: 12px;
+          height: 5px;
+          transform: translateY(-50%) rotate(-45deg);
+          border-bottom: 1px solid $main-color;
+          border-left: 1px solid $main-color;
+        }
+      }
+    }
   }
 
   &__button {
