@@ -155,9 +155,14 @@
     > a {
       display: inline-block;
       margin-top: 20px;
+      transition: opacity 0.3s ease-in;
       color: $sub-color;
       font-size: 0.875rem;
       text-decoration: underline;
+
+      &:hover {
+        opacity: 0.6;
+      }
 
       @include mq(md) {
         margin-top: 30px;

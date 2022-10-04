@@ -7,6 +7,11 @@
 */
 .p-recommend {
   justify-content: space-between;
+  transition: opacity 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   &__heading {
     font-size: 1.25rem;

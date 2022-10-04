@@ -7,6 +7,11 @@
 */
 .p-relateArticle {
   justify-content: space-between;
+  transition: opacity 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   &__body {
     width: 53%;

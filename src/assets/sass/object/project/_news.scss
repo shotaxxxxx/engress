@@ -6,7 +6,12 @@
   News
 */
 .p-news {
+  transition: opacity 0.3s ease-in;
   color: $main-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   &__body {
     display: flex;

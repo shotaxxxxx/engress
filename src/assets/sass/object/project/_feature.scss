@@ -138,9 +138,15 @@
       > .-rounded {
         display: block;
         padding: 8px 0;
+        transition: color 0.3s ease-in, border 0.3s ease-in;
         border: 1px solid $base-color;
         border-radius: 30px;
         color: $secondary-text-color;
+
+        &:hover {
+          border: 1px solid $sub-color;
+          color: $sub-color;
+        }
 
         @include mq(lg) {
           padding: 12px 0;

@@ -100,10 +100,14 @@
     > .-primary,
     .-secondary {
       display: block;
+      position: relative;
       width: 142px;
       margin: 0 auto;
       padding: 10px 0;
+      // z-index: 1;
+      transition: 0.3s;
       border-radius: 5px;
+      background-color: transparent;
       color: $base-color;
       font-weight: 700;
 
@@ -117,7 +121,35 @@
     }
 
     > .-primary {
-      background-color: $sub-color;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+
+      &::before {
+        z-index: -1;
+        transition: transform 0.3s ease-in, opacity 0.3s;
+        background-color: $sub-color;
+      }
+
+      &::after {
+        border: 1px solid $sub-color;
+      }
+
+      &:hover {
+        color: $sub-color;
+
+        &::before {
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
 
       @include mq(xl) {
         width: 142px;
@@ -125,7 +157,35 @@
     }
 
     > .-secondary {
-      background-color: $main-color;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+
+      &::before {
+        z-index: -1;
+        transition: transform 0.3s ease-in, opacity 0.3s;
+        background-color: $main-color;
+      }
+
+      &::after {
+        border: 1px solid $main-color;
+      }
+
+      &:hover {
+        color: $main-color;
+
+        &::before {
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
 
       @include mq(xl) {
         width: 137px;
