@@ -16,6 +16,10 @@
   &__body {
     justify-content: space-between;
     padding-left: 16px;
+
+    @include mq(lg) {
+      max-width: 260px;
+    }
   }
 
   &__category {
@@ -24,10 +28,14 @@
   }
 
   &__title {
+    display: -webkit-box;
+    overflow: hidden;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.6875;
     text-decoration: underline;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   &__publish {
@@ -36,6 +44,7 @@
 
   &__image {
     max-width: 150px;
+    max-height: 110px;
 
     > img {
       width: 100%;

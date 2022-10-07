@@ -50,10 +50,14 @@
               </span>
             </button>
             <ul id="global-nav" class="p-globalNav">
-              <li class="p-globalNav__item"><a href="index.html" class="p-globalNav__link">ホーム</a></li>
-              <li class="p-globalNav__item"><a href="news.html" class="p-globalNav__link">お知らせ</a></li>
-              <li class="p-globalNav__item"><a href="blog.html" class="p-globalNav__link">ブログ</a></li>
-              <li class="p-globalNav__item"><a href="plan.html" class="p-globalNav__link">コース・料金</a></li>
+              <li class="p-globalNav__item">
+                <ul class="p-navMenu">
+                  <li class="p-navMenu__item"><a class="p-navMenu__link" href="index.html">ホーム</a></li>
+                  <li  class="p-navMenu__item"><a class="p-navMenu__link" href="news.html">お知らせ</a></li>
+                  <li  class="p-navMenu__item"><a class="p-navMenu__link" href="blog.html">ブログ</a></li>
+                  <li  class="p-navMenu__item"><a class="p-navMenu__link" href="plan.html">コース・料金</a></li>
+                </ul>
+              </li>
               <li class="p-globalNav__item -xxs">
                 <div class="p-header__cta">
                   <div class="p-header__info">
@@ -130,67 +134,88 @@
                 <p class="p-contact__text">
                   弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。
                 </p>
-                <form action="" class="p-contact__form">
-                  <dl class="p-contact__def">
-                    <dt class="p-contact__def--tit"><label for="company">会社名</label></dt>
-                    <dd class="p-contact__def--data"><input type="text" id="company" placeholder="Engress" /></dd>
-                    <dt class="p-contact__def--tit"><label for="name">氏名</label></dt>
-                    <dd class="p-contact__def--data"><input type="text" id="name" placeholder="田中　太郎" /></dd>
-                    <dt class="p-contact__def--tit"><label for="email">メールアドレス</label></dt>
-                    <dd class="p-contact__def--data">
+                <table class="p-contact__form">
+                  <tr class="p-contact__tr">
+                    <th class="p-contact__th"><label for="company">会社名</label></th>
+                    <td class="p-contact__td"><input type="text" id="company" placeholder="Engress" /></td>
+                  </tr>
+                  <tr class="p-contact__tr">
+                    <th class="p-contact__th"><label for="name">氏名</label></th>
+                    <td class="p-contact__td"><input type="text" id="name" placeholder="田中　太郎" /></td>
+                  </tr>
+                  <tr class="p-contact__tr">
+                    <th class="p-contact__th">
+                      <label for="email">メールアドレス</label>
+                    </th>
+                    <td class="p-contact__td">
                       <input type="email" id="email" placeholder="example@example.com" />
-                    </dd>
-                    <dt class="p-contact__def--tit"><label for="tel">電話番号</label></dt>
-                    <dd class="p-contact__def--data"><input type="tel" id="tel" placeholder="01-2345-6789" /></dd>
-                    <dt class="p-contact__def--tit">
+                    </td>
+                  </tr>
+                  <tr class="p-contact__tr">
+                    <th class="p-contact__th">
+                      <label for="tel">電話番号</label>
+                    </th>
+                    <td class="p-contact__td">
+                      <input type="tel" id="tel" placeholder="01-2345-6789" />
+                    </td>
+                  </tr>
+                  <tr class="p-contact__tr">
+                    <th class="p-contact__th">
                       <p>お問い合わせの種類を選択してください（<span>資料請求の方は資料請求を選択ください</span>）</p>
-                    </dt>
-                    <dd class="p-contact__def--data -radio">
+                    </th>
+                    <td class="p-contact__td">
                       <label>
                         <input type="radio" name="kind" value="ご相談" />
                         <span>商談のご相談</span>
                       </label>
-                    </dd>
-                    <dd class="p-contact__def--data -radio">
+                    </td>
+                    <td class="p-contact__td">
                       <label>
                         <input type="radio" name="kind" value="お問い合わせ" />
                         <span>サービスに関するお問い合わせ</span>
                       </label>
-                    </dd>
-                    <dd class="p-contact__def--data -radio">
+                    </td>
+                    <td class="p-contact__td">
                       <label>
                         <input type="radio" name="kind" value="資料" />
                         <span>資料請求</span>
                       </label>
-                    </dd>
-                    <dd class="p-contact__def--data -radio">
+                    </td>
+                    <td class="p-contact__td">
                       <label>
                         <input type="radio" name="kind" value="その他" />
                         <span>その他</span>
                       </label>
-                    </dd>
-                    <dt class="p-contact__def--tit"><label for="inquiry">お問い合わせ内容</label></dt>
-                    <dd class="p-contact__def--data">
+                    </td>
+                  </tr>
+                  <tr class="p-contact__tr">
+                    <th class="p-contact__th">
+                      <label for="inquiry">お問い合わせ内容</label>
+                    </th>
+                    <td class="p-contact__td">
                       <textarea name="inquiery" id="inquiry" cols="80" rows="8" placeholder="入力して下さい"></textarea>
-                    </dd>
-                  </dl>
-                  <div class="p-contact__check">
-                    <p class="p-contact_privacyText">
-                      <button type="button" class="p-contact__link">
-                      プライバシーポリシー</button>に同意の上、<br class="u-break -md">送信ください。</p>
-                    <div class="p-contact__checkbox">
-                      <label
-                        ><input type="checkbox" name="agree" value="同意します" />
-                        <span>プライバシーポリシーに同意する</span>
-                      </label>
-                    </div>
-                  </div>
-                  <!-- /.p-contact__check -->
-                  <div class="p-contact__button">
-                    <button type="submit" class="c-button">送信する</button>
-                  </div>
-                  <!-- /.p-contact__button -->
-                </form>
+                    </td>
+                  </tr>
+                  <tr class="p-contact__tr">
+                    <th class="p-contact__check">
+                      <p class="p-contact_privacyText">
+                        <button type="button" class="p-contact__link">プライバシーポリシー</button>に同意の上、<br
+                        class="u-break -md"
+                        />送信ください。
+                      </p>
+                    </th>
+                    <td class="p-contact__checkbox">
+                        <label
+                          ><input type="checkbox" name="agree" value="同意します" />
+                          <span>プライバシーポリシーに同意する</span>
+                        </label>
+                    </td>
+                  </tr>
+                </table>
+                <div class="p-contact__button">
+                  <button type="submit" class="c-button">送信する</button>
+                </div>
+                <!-- /.p-contact__button -->
               </div>
               <!-- /.p-contact -->
             </div>
@@ -208,10 +233,10 @@
             <div class="l-wrapper">
               <div class="p-footerBottom__body">
                 <ul class="p-footerNav">
-                  <li class="p-footerNav__item"><a href="index.html" class="p-footerNav__link">ホーム</a></li>
-                  <li class="p-footerNav__item"><a href="news.html" class="p-footerNav__link">お知らせ</a></li>
-                  <li class="p-footerNav__item"><a href="blog.html" class="p-footerNav__link">ブログ</a></li>
-                  <li class="p-footerNav__item"><a href="plan.html" class="p-footerNav__link">コース・料金</a></li>
+                  <li class="p-footerNav__item"><a href="index.html">ホーム</a></li>
+                  <li class="p-footerNav__item"><a href="news.html">お知らせ</a></li>
+                  <li class="p-footerNav__item"><a href="blog.html">ブログ</a></li>
+                  <li class="p-footerNav__item"><a href="plan.html">コース・料金</a></li>
                 </ul>
                 <address class="p-footer__address">
                   <span class="u-visuallyHidden" lang="en">Engress</span>

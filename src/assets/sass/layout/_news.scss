@@ -5,10 +5,16 @@
   News
 -----------------------------------------------------*/
 .l-news {
-  padding-top: 40px;
-
   @include mq(lg) {
-    padding-top: 30px;
+    margin-left: 67px;
+  }
+
+  &__items {
+    padding-top: 40px;
+
+    @include mq(lg) {
+      padding-top: 30px;
+    }
   }
 
   &__item {

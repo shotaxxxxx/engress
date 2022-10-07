@@ -50,7 +50,7 @@
   &__bottom {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   &__snsicon {
@@ -67,12 +67,25 @@
     > img {
       width: 100%;
       height: 100%;
+      max-height: 400px;
       object-fit: cover;
     }
   }
 
   &__content {
-    > h2 {
+    h1 {
+      margin-top: 20px;
+      font-size: 1.375rem;
+      font-weight: 700;
+      line-height: 1.5;
+
+      @include mq(md) {
+        margin-top: 40px;
+        font-size: 1.875rem;
+      }
+    }
+
+    h2 {
       margin-top: 20px;
       font-size: 1.25rem;
       font-weight: 700;
@@ -84,7 +97,7 @@
       }
     }
 
-    > p {
+    p {
       margin-top: 20px;
       font-size: 0.875rem;
 
@@ -95,7 +108,7 @@
       }
     }
 
-    > h3 {
+    h3 {
       position: relative;
       margin-top: 20px;
       padding-left: 14px;
@@ -119,10 +132,29 @@
       }
     }
 
-    > blockquote {
+    blockquote {
+      position: relative;
       margin-top: 20px;
       padding: 14px 8px 10px 34px;
       background-color: $background-color;
+
+      &::before {
+        content: "“";
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        height: 100%;
+        color: $quote-color;
+        font-size: 3rem;
+        line-height: 1;
+
+        @include mq(lg) {
+          top: 13px;
+          left: 20px;
+          font-size: 5.625rem;
+        }
+      }
 
       @include mq(md) {
         margin-top: 30px;
@@ -135,34 +167,27 @@
 
       > p {
         position: relative;
+        margin-top: 0;
+        margin-bottom: 10px;
         font-size: 0.875rem;
         line-height: 1.5;
 
         @include mq(md) {
           font-size: 1rem;
         }
+      }
 
-        &::before {
-          content: "“";
-          display: inline-block;
-          position: absolute;
-          top: 0;
-          left: -26px;
-          height: 100%;
-          color: $quote-color;
-          font-size: 3rem;
-          line-height: 1;
+      > cite {
+        font-size: 0.875rem;
 
-          @include mq(lg) {
-            top: -10px;
-            left: -56px;
-            font-size: 5.625rem;
-          }
+        @include mq(md) {
+          font-size: 1rem;
+          line-height: 1.5;
         }
       }
     }
 
-    > img {
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -173,7 +198,7 @@
       }
     }
 
-    > ul {
+    ul {
       margin-top: 20px;
 
       @include mq(md) {
@@ -208,9 +233,26 @@
       }
     }
 
-    > a {
-      display: inline-block;
+    ol {
       margin-top: 20px;
+
+      @include mq(md) {
+        margin-top: 30px;
+      }
+
+      > li {
+        padding-left: 15px;
+        font-size: 0.875rem;
+
+        @include mq(md) {
+          padding-left: 21px;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
       transition: opacity 0.3s ease-in;
       color: $sub-color;
       font-size: 0.875rem;
@@ -221,9 +263,12 @@
       }
 
       @include mq(md) {
-        margin-top: 30px;
         font-size: 0.875rem;
       }
+    }
+
+    pre {
+      white-space: pre-wrap;
     }
   }
 }

@@ -15,29 +15,40 @@
   }
 
   &__form {
+    width: 100%;
     margin-top: 40px;
   }
 
-  &__def {
-    &--tit {
-      margin-top: 20px;
+  &__tr {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 
-      &:first-child {
-        margin-top: 0;
-      }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 
-      span {
-        font-weight: 700;
-      }
+  &__th {
+    margin-top: 20px;
+    font-weight: 400;
+    text-align: left;
+
+    &:first-child {
+      margin-top: 0;
     }
 
-    &--data {
-      margin-top: 12px;
+    span {
+      font-weight: 700;
+    }
+  }
 
-      &.-radio {
-        @include mq(md) {
-          margin-top: 18px;
-        }
+  &__td {
+    margin-top: 12px;
+
+    &.-radio {
+      @include mq(md) {
+        margin-top: 18px;
       }
     }
   }
@@ -62,11 +73,13 @@
 
   &__check {
     margin-top: 30px;
+    font-weight: 400;
     text-align: center;
   }
 
   &__checkbox {
     margin-top: 30px;
+    text-align: center;
   }
 
   &__link {

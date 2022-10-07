@@ -53,8 +53,17 @@
   }
 
   &__itemImage {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 171px;
     background-color: $base-color;
     text-align: center;
+
+    > img {
+      max-height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__itemInfo {

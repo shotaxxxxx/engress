@@ -69,7 +69,7 @@
       }
     }
 
-    > blockquote {
+    blockquote {
       margin-top: 20px;
       padding: 14px 8px 10px 34px;
       background-color: $background-color;
@@ -113,11 +113,11 @@
       }
     }
 
-    > img {
-      margin-top: 30px;
+    figure {
+      margin-top: 20px;
     }
 
-    > ul {
+    ul {
       margin-top: 20px;
 
       @include mq(md) {
@@ -152,9 +152,8 @@
       }
     }
 
-    > a {
+    a {
       display: inline-block;
-      margin-top: 20px;
       transition: opacity 0.3s ease-in;
       color: $sub-color;
       font-size: 0.875rem;
@@ -165,7 +164,6 @@
       }
 
       @include mq(md) {
-        margin-top: 30px;
         font-size: 0.875rem;
       }
     }

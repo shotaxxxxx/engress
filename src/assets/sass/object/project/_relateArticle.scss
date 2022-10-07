@@ -22,8 +22,12 @@
   }
 
   &__title {
+    display: -webkit-box;
+    overflow: hidden;
     font-size: 0.875rem;
     text-decoration: underline;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 
     @include mq(md) {
       font-size: 1rem;
@@ -32,6 +36,7 @@
 
   &__image {
     width: 45%;
+    max-height: 110px;
 
     @include mq(sm) {
       width: 40%;

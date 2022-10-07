@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+@use "sass:math";
+@use "../../global" as *;
+
+/*
+  Bookmarking
+*/
+.wp_social_marking_light {
+  padding: 0 !important;
+}
+
+._89n_ {
+  background: $facebook-color;
+}
+
+.btn {
+  border-radius: 3px;
+  background-color: $twitter-color;
+}

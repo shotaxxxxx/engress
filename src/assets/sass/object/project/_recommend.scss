@@ -31,12 +31,16 @@
   }
 
   &__title {
+    display: -webkit-box;
     order: 1;
     padding-top: 14px;
+    overflow: hidden;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
     text-decoration: underline;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 
     @include mq(md) {
       font-size: 1.125rem;
